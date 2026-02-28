@@ -44,7 +44,7 @@ ls ./data/raw
 #    then create the following sub-directories within it: server_logs, user_logs, and event_logs
 #We are already in data directory
 mkdir ./data/processed
-cd ./processed
+cd ./data/processed
 mkdir server_logs user_logs event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs

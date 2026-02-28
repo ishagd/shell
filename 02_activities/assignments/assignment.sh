@@ -35,7 +35,6 @@ mkdir data
 mv ./rawdata ./data/
 cd ./data #go to data directory 
 mv rawdata raw  #rename rawdata to raw 
-pwd 
 
 # 3. List the contents of the ./data/raw directory
 cd ../
@@ -44,7 +43,7 @@ ls ./data/raw
 # 4. Create the directory ./data/processed, 
 #    then create the following sub-directories within it: server_logs, user_logs, and event_logs
 #We are already in data directory
-mkdir ./processed
+mkdir ./data/processed
 cd ./processed
 mkdir server_logs user_logs event_logs
 

@@ -35,9 +35,11 @@ mkdir data
 mv ./rawdata ./data/
 cd ./data #go to data directory 
 mv rawdata raw  #rename rawdata to raw 
+pwd 
 
 # 3. List the contents of the ./data/raw directory
-ls raw
+cd ../
+ls ./data/raw
 
 # 4. Create the directory ./data/processed, 
 #    then create the following sub-directories within it: server_logs, user_logs, and event_logs
@@ -55,6 +57,7 @@ cp ./raw/*user*.log ./processed/user_logs
 cp ./raw/*event*.log ./processed/event_logs
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
+
 rm ./raw/*ipaddr*.*
 rm ./processed/user_logs/*ipaddr*.*
 
